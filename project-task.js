@@ -32,7 +32,7 @@ This activity reinforces:
 // ❌ Original Code (Before Refactoring)
 // ============================================
 
-// Script 1 - Greeting multiple users
+/* Script 1 - Greeting multiple users
 console.log("Welcome, Alice!");
 console.log("Welcome, Bob!");
 console.log("Welcome, Charlie!");
@@ -72,3 +72,66 @@ for (let i = 0; i < names.length; i++) {
 */
 
 // ✅ Your refactored code goes below this line!
+
+//Script 1 - Greeting multiple users
+function greetUser(name)
+{
+   console.log("Welcome, " + name + "!");
+}
+
+// Script 2 - Sum calculation
+function calculateSum(num1, num2) {
+    return num1 + num2;
+}
+
+// Script 3 - Product calculation
+function calculateProduct(num1, num2) {
+    return num1 * num2;
+}
+
+// Script 4 - Print names from a list
+function printNames(names)
+{
+console.log("Names in the list:");
+for (let i = 0; i < names.length; i++) {
+    console.log(names[i]);
+}
+}
+
+console.log("Script 1 - Greeting multiple users");
+greetUser("Alice");
+greetUser("Bob");
+greetUser("Charlie");
+
+console.log("\nScript 2 - Sum calculation");
+let numA = 5, numB = 10;
+let sumResult = calculateSum(numA, numB);
+console.log("The sum of " + numA + " and " + numB + " is " + sumResult);
+
+console.log("\nScript 3 - Product calculation");
+let productResult = calculateProduct(numA, numB);
+console.log("The product of " + numA + " and " + numB + " is " + productResult);
+
+console.log("\nScript 4 - Print names from a list");
+let names = ["Alice", "Bob", "Charlie"];
+printNames(names);
+
+
+/* After REfactoring
+Script 1 - Greeting multiple users
+Welcome, Alice!
+Welcome, Bob!
+Welcome, Charlie!
+
+Script 2 - Sum calculation
+The sum of 5 and 10 is 15
+
+Script 3 - Product calculation
+The product of 5 and 10 is 50
+
+Script 4 - Print names from a list
+Names in the list:
+Alice
+Bob
+Charlie
+*/
